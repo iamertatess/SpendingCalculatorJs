@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: url(images/calculator.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.heading {
+  color: #fff;
+  margin-top: 50px;
+  text-shadow: 2px 2px 20px #fff;
+}
+
+.container {
+  background-color: #fff;
+  width: 500px;
+  height: 600px;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.main{
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+}
+
+.main > input{
+    border: none;
+    outline: none;
+    font-size: 25px;
+    font-style: italic;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.double{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+
+.form-spending, .form-price{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+input{
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.btn{
+    background-color: red;
+    color: #fff;
+    border-radius:10px 20px ;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    scale: 0.95;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.form-status{
+    display: flex;
+    align-items: center;    
+    gap: 10px;
+}
+
+.total{
+    background-color: darkblue;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 10px 10px;
+    font-size: 20px;
+}
+
+.total span{
+    color: yellow;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    overflow: scroll;
+    scroll-behavior: auto;
+    background-color: transparent;
+}
+
+.spending{  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+}
+
+.buttons img{
+    width: 50px;
+    height: 50px;
+}
+
+
+.buttons img:nth-child(2){
+    width: 40px;
+    height: 40px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#filter-select{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+}
+
+
+.spending h2:nth-child(2){
+    color: red;
+}
+
+
+.payed{
+    opacity: 0.6;
+    
+}
+
+
+.payed h2:nth-child(1){
+    text-decoration: line-through;
+}
+
+.payed h2:nth-child(2){
+    color: green;
+}
+
+
+
